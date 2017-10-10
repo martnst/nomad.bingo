@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link href="./style.css" rel="stylesheet">
+  <title>Nomad Bingo</title>
+</head>
+
+<script charset="utf-8">
+    function toogleBackgroundColor(cell) {
+      cell.classList = cell.classList[0] === 'selected' ? ['foo'] : ['selected']      
+    }
+
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+    }
+
+    function shuffle(array) {
+      for (var i = 0; i < array.length; i++) {
+        var index1 = getRandomIntInclusive(0, array.length -1)
+        var index2 = getRandomIntInclusive(0, array.length -1)
+        var tmp = array[index1]
+        array[index1] = array[index2]
+        array[index2] = tmp        
+      }
+      return array
+    }
+
+    function loadGrid() {
+
+      var terms = shuffle([
+        "Four Hour Work Week",
+        "Passive Income",
+        "Corporate",
+        "Location Idependent",
+        "Countries",
+        "(Online) Business",
+        "Money",
+        "Travel",
+        "Code",
+        "Passive income",
+        "Airbnb",
+        "Inspiration",
+        "Passion", 
+        "Freedom",
+        "Client / Customer",
+        "Bali",
+        "Love",
+        "Lifestyle",
+        "Co-Working",
+        "Social Meda",
+        "Marketing",
+        "Blog",
+        "Product"
+      ])
+
+      var cells = document.getElementsByTagName('td')
+      for (var index = 0; index < cells.length; index++) {
+        if (index < terms.length) {
+          cells[index].innerText = terms[index];
+        }        
+      }     
+    }
+
+    </script>
+
+
+<body onload="loadGrid()">
+  
+  <h1>Nomad Bingo</h1>  
+  <p>Just like Bullshit-Bingo: As listining to a talk, cross of the words as a speaker says them by tapping the terms. Shout out <b><i>Bingo</i></b> once you have a full line.</p>
+  
+  <table>
+     <tr>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+     </tr>
+     <tr>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+     </tr>
+     <tr>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+      </tr>
+      <tr>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+        <td onclick="toogleBackgroundColor(this)">…</td>
+      </tr>
+  </table>
+
+  <p><small>This current version of Nomad Bingo was build on <a href="http://nomadcruise.com/" target="_blank">Nomad Cruise</a> by <a href="http://martn.st" target="_blank">Martin</a>.</small></p>
+  
+</body>
+</html>

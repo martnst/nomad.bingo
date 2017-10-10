@@ -1,0 +1,31 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 3%;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  width: 25%;
+  height: 5em;
+  background: #eee;
+  margin: 0.3em;
+  padding: 0.3em; 
+  border: 1px solid blueviolet;
+  border-top: 1px solid #eee; 
+  border-left: 1px solid #eee;
+  text-align: center; 
+}
+
+td.selected {
+  background: blueviolet;
+  color: white;
+  border: 1px solid blueviolet
+}
