@@ -1,21 +1,26 @@
-table {
-  width: 100%;
-}
-
-table td {
-  width: 25%;
-  height: 5em;
+.square {
   background: #eee;
-  margin: 0.3em;
-  padding: 0.3em; 
   border: 1px solid blueviolet;
   border-top: 1px solid #eee; 
   border-left: 1px solid #eee;
   text-align: center; 
+  padding: 0.1em;
 }
 
-td.selected {
+.selected {
   background: blueviolet;
   color: white;
   border: 1px solid blueviolet
+}
+
+.square div {
+ display: table;
+ width: 100%;
+ height: 100%;
+}
+
+.square span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }

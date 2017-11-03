@@ -1,4 +1,5 @@
 import React from 'react'
+import './square.css'
 
 export default class Square extends React.Component {
   constructor (props) {
@@ -15,9 +16,11 @@ export default class Square extends React.Component {
   render () {
     var className = this.state.isSelected ? 'selected' : ''
     return (
-      <td className={className} onClick={e => this.handleClick(e)}>
-        {this.props.title}
-      </td>
+      <div className={['grid-cell square ' + className]} onClick={e => this.handleClick(e)}>
+        <div>
+          <span>{this.props.title}</span>
+        </div>
+      </div>
     )
   }
 }
