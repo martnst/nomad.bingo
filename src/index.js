@@ -8,7 +8,7 @@ class Game extends React.Component {
   render () {
     return (
       <div className='game'>
-        <Board terms={_.shuffle(terms)} />
+        <Board terms={_.shuffle(terms)} rowHeight='6em' />
       </div>
     )
   }
