@@ -2,15 +2,9 @@
   "name": "nomad-bingo",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "jest-expo": "^22.0.0",
-    "react-native-scripts": "^1.5.0",
-    "react-test-renderer": "^16.1.0"
-  },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
@@ -19,9 +13,6 @@
     "navtive:ios": "react-native run-ios",
     "navtive:test": "node node_modules/jest/bin/jest.js --watch"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
     "expo": "^22.0.0",
     "react": "^16.0.0",
@@ -29,5 +20,17 @@
     "react-native": "^0.50.3",
     "react-native-web": "^0.1.13",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-native": "^4.0.0",
+    "jest": "^21.2.1",
+    "jest-expo": "^22.0.0",
+    "react-native-scripts": "^1.5.0",
+    "react-test-renderer": "^16.1.0"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
