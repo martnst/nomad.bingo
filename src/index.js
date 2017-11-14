@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Board from './board/board'
+import Board from './bingoGame/Board'
 import _ from 'underscore'
 import terms from './terms.json'
 

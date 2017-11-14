@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
-import Board from './src/board/board'
+import Board from './src/bingoGame/Board'
 import terms from './src/terms.json'
 import _ from 'underscore'
 
