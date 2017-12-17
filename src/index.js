@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Board from './bingoGame/Board'
+import Header from './Header'
 import _ from 'underscore'
 import terms from './terms.json'
 
@@ -19,5 +20,10 @@ class Game extends React.Component {
 ReactDOM.render(
   <Game />,
   document.getElementById('root')
+)
+
+ReactDOM.render(
+  <Header />,
+  document.getElementsByTagName('header')[0]
 )
 

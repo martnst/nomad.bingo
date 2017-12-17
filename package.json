@@ -8,16 +8,16 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "navtive:start": "react-native start",
-    "navtive:android": "react-native run-android",
-    "navtive:ios": "react-native run-ios",
-    "navtive:test": "node node_modules/jest/bin/jest.js --watch"
+    "native:start": "react-native start",
+    "native:android": "react-native run-android",
+    "native:ios": "react-native run-ios",
+    "native:test": "node node_modules/jest/bin/jest.js --watch"
   },
   "dependencies": {
     "expo": "^22.0.0",
     "react": "16.0.0-beta.5",
     "react-dom": "^16.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz",
+    "react-native": "^0.49.3",
     "react-native-web": "^0.1.13",
     "underscore": "^1.8.3"
   },
@@ -32,5 +32,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
   }
 }
