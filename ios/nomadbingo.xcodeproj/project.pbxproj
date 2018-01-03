@@ -1169,6 +1169,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = bingo.nomad.ios;
 				PRODUCT_NAME = nomadbingo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1187,6 +1188,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = bingo.nomad.ios;
 				PRODUCT_NAME = nomadbingo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
