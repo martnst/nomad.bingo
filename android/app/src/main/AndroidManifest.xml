@@ -1,10 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nomadbingo"
-    android:versionCode="1"
-    android:versionName="1.0">
+    android:versionCode="2"
+    android:versionName="1.0"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- remove permissions unnecessary added by react-native -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -31,5 +37,4 @@
         android:name="io.fabric.ApiKey"
         android:value="cf161beb81da8989fb6ef8f40a0e4b9fc427822b" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
