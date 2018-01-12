@@ -13,7 +13,8 @@
     "native:ios": "react-native run-ios",
     "native:test": "node node_modules/jest/bin/jest.js --watch",
     "build:ios": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output iOS/main.jsbundle",
-    "build:android": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output iOS/main.jsbundle"
+    "build:android": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output iOS/main.jsbundle",
+    "build:web": "react-scripts build"
   },
   "dependencies": {
     "expo": "^22.0.0",
